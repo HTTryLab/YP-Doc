@@ -132,7 +132,7 @@ export default function Home() {
               如果您有任何问题或合作意向，欢迎随时联系我们！
             </p>
             <div className={styles.contactLinks}>
-              <Link className="button button--primary" to="/products">
+              <Link className="button button--primary" to="/YP-Doc/products">
                 查看产品
               </Link>
               <a className="button button--outline" href="mailto:contact@yp.com">

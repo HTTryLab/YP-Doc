@@ -46,7 +46,7 @@ const config = {
       items: [
         {
           label: '首页',
-          to: '/',
+          to: '/YP-Doc/',
           position: 'left',
         },
         ...navbarItems,
@@ -64,11 +64,11 @@ const config = {
           items: [
             {
               label: '文档',
-              to: '/',
+              to: '/YP-Doc/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/HTTryLab/YP-Doc',
             },
           ],
         },

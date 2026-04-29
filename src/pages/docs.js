@@ -22,22 +22,22 @@ function DocCard({ product }) {
         
         <div className={styles.docLinks}>
           <div className={styles.docLinkItem}>
-            <Link to={`/products/${product.slug}/docs/intro`}>
+            <Link to={`/YP-Doc/products/${product.slug}/docs/intro`}>
               📖 产品简介
             </Link>
           </div>
           <div className={styles.docLinkItem}>
-            <Link to={`/products/${product.slug}/docs/getting-started/quickstart`}>
+            <Link to={`/YP-Doc/products/${product.slug}/docs/getting-started/quickstart`}>
               ⚡ 快速开始
             </Link>
           </div>
           <div className={styles.docLinkItem}>
-            <Link to={`/products/${product.slug}/docs/getting-started/installation`}>
+            <Link to={`/YP-Doc/products/${product.slug}/docs/getting-started/installation`}>
               📦 安装指南
             </Link>
           </div>
           <div className={styles.docLinkItem}>
-            <Link to={`/products/${product.slug}/docs/api-reference/overview`}>
+            <Link to={`/YP-Doc/products/${product.slug}/docs/api-reference/overview`}>
               📚 API 参考
             </Link>
           </div>

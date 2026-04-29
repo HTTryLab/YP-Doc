@@ -101,6 +101,9 @@ function generateProductsConfig() {
   const productDirs = findProductDirs(productsDir);
   const products = [];
 
+  // 硬编码 baseUrl，与 docusaurus.config.js 保持一致
+  const baseUrl = '/YP-Doc/';
+
   console.log('\n📦 自动加载产品配置:');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
@@ -127,7 +130,7 @@ function generateProductsConfig() {
       longDescription: frontMatter.longDescription || frontMatter.description || '',
       icon: frontMatter.icon || '📦',
       color: frontMatter.color || '#64748b',
-      docsUrl: `/products/${frontMatter.slug}/docs/intro`,
+      docsUrl: `${baseUrl}products/${frontMatter.slug}/docs/intro`,
       website: frontMatter.website || '#',
       features: Array.isArray(frontMatter.features) ? frontMatter.features : [],
       docsId: frontMatter.slug
@@ -162,7 +165,7 @@ function generateProductsConfig() {
 
     footerItems.push({
       label: product.name,
-      to: `/products/${product.slug}/docs/intro`,
+      to: `${baseUrl}products/${product.slug}/docs/intro`,
     });
   }
 
@@ -172,7 +175,7 @@ function generateProductsConfig() {
     items: [
       {
         label: '组件列表',
-        to: '/products',
+        to: `${baseUrl}products`,
       },
     ],
   });
@@ -183,11 +186,11 @@ function generateProductsConfig() {
     items: [
       {
         label: '文档首页',
-        to: '/docs',
+        to: `${baseUrl}docs`,
       },
       ...products.map(product => ({
         label: product.name,
-        to: `/products/${product.slug}/docs/intro`,
+        to: `${baseUrl}products/${product.slug}/docs/intro`,
       })),
     ],
   });

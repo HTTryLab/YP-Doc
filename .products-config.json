@@ -7,7 +7,7 @@
       "longDescription": "YP.JsonApi 是一个功能强大的 .NET 动态 JSON API 框架，允许您通过 JSON 配置文件快速定义和管理 API 端点，无需编写繁琐的控制器代码。",
       "icon": "🚀",
       "color": "#2563eb",
-      "docsUrl": "/products/yp-json-api/docs/intro",
+      "docsUrl": "/YP-Doc/products/yp-json-api/docs/intro",
       "website": "https://github.com/your-org/yp-json-api",
       "features": [
         "动态 API 注册：通过 JSON 配置文件定义 API 端点",
@@ -35,7 +35,7 @@
       "longDescription": "YP.Scheduler（YP.TimedJob）是一个轻量级的.NET定时任务框架，通过声明式配置和特性标记即可快速完成任务调度配置。支持灵活的时间配置、执行控制、同步/异步任务、错误处理、依赖注入等功能。",
       "icon": "⏰",
       "color": "#10b981",
-      "docsUrl": "/products/yp-scheduler/docs/intro",
+      "docsUrl": "/YP-Doc/products/yp-scheduler/docs/intro",
       "website": "https://github.com/your-org/yp-scheduler",
       "features": [
         "轻量级设计，易于集成到多种.NET项目",
@@ -85,7 +85,7 @@
       "items": [
         {
           "label": "组件列表",
-          "to": "/products"
+          "to": "/YP-Doc/products"
         }
       ]
     },
@@ -95,15 +95,15 @@
       "items": [
         {
           "label": "文档首页",
-          "to": "/docs"
+          "to": "/YP-Doc/docs"
         },
         {
           "label": "YP.JsonApi",
-          "to": "/products/yp-json-api/docs/intro"
+          "to": "/YP-Doc/products/yp-json-api/docs/intro"
         },
         {
           "label": "YP.Scheduler",
-          "to": "/products/yp-scheduler/docs/intro"
+          "to": "/YP-Doc/products/yp-scheduler/docs/intro"
         }
       ]
     }
@@ -111,11 +111,11 @@
   "footerItems": [
     {
       "label": "YP.JsonApi",
-      "to": "/products/yp-json-api/docs/intro"
+      "to": "/YP-Doc/products/yp-json-api/docs/intro"
     },
     {
       "label": "YP.Scheduler",
-      "to": "/products/yp-scheduler/docs/intro"
+      "to": "/YP-Doc/products/yp-scheduler/docs/intro"
     }
   ]
 }
