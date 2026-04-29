@@ -6,19 +6,6 @@ import Layout from '@theme/Layout';
 
 import styles from './index.module.css';
 
-function TeamMember({ name, role, description, avatar }) {
-  return (
-    <div className={clsx('col col--4', styles.teamCard)}>
-      <div className={styles.teamInner}>
-        <div className={styles.avatar}>{avatar}</div>
-        <h3 className={styles.memberName}>{name}</h3>
-        <p className={styles.memberRole}>{role}</p>
-        <p className={styles.memberDescription}>{description}</p>
-      </div>
-    </div>
-  );
-}
-
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -33,45 +20,6 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  
-  const teamMembers = [
-    {
-      name: '张明',
-      role: '技术总监',
-      description: '拥有15年企业级软件架构经验，专注于.NET技术栈，带领团队完成多个大型项目的设计与实施。',
-      avatar: '👨‍💼'
-    },
-    {
-      name: '李华',
-      role: '高级工程师',
-      description: '精通前后端开发，对微服务架构有深入研究，负责核心产品的技术实现和性能优化。',
-      avatar: '👨‍💻'
-    },
-    {
-      name: '王芳',
-      role: '产品经理',
-      description: '10年产品管理经验，擅长用户需求分析和产品规划，致力于打造用户体验极佳的软件产品。',
-      avatar: '👩‍💼'
-    },
-    {
-      name: '陈伟',
-      role: 'QA负责人',
-      description: '专注于自动化测试和质量保障，确保产品的稳定性和可靠性。',
-      avatar: '👨‍🔧'
-    },
-    {
-      name: '刘洋',
-      role: 'DevOps工程师',
-      description: '负责CI/CD流程搭建和云基础设施管理，保障产品的快速部署和运维。',
-      avatar: '👨‍🔧'
-    },
-    {
-      name: '赵静',
-      role: 'UI/UX设计师',
-      description: '专注于用户界面设计和用户体验优化，打造美观且易用的产品界面。',
-      avatar: '👩‍🎨'
-    }
-  ];
 
   return (
     <Layout
@@ -114,17 +62,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.teamSection}>
-          <div className="container">
-            <h2 className={styles.sectionTitle}>团队成员</h2>
-            <div className="row">
-              {teamMembers.map((member, index) => (
-                <TeamMember key={index} {...member} />
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className={styles.contactSection}>
           <div className="container">
             <h2 className={styles.sectionTitle}>联系我们</h2>
@@ -135,9 +72,6 @@ export default function Home() {
               <Link className="button button--primary" to="/YP-Doc/products">
                 查看产品
               </Link>
-              <a className="button button--outline" href="mailto:contact@yp.com">
-                发送邮件
-              </a>
             </div>
           </div>
         </section>
